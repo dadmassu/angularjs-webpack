@@ -1,0 +1,13 @@
+<div>
+    <md-switch ng-model="$ctrl.contacts" aria-label="Switch 2" ng-true-value="'yup'" ng-false-value="'nope'" class="md-warn">
+        Switch 2 (md-warn): {{ $ctrl.contacts }}
+    </md-switch>
+    <p>what is up</p>
+    <h1>{{name}}from the starter component</h1>
+    <h1> {{$ctrl.selamta.title}} from the http request in the starter component</h1>
+    <md-chips ng-model="$ctrl.contacts">
+        {{$ctrl.contacts}}
+    </md-chips>
+    <button ng-click="$ctrl.count()">{{$ctrl.counter}}</button> {{$ctrl.counter != 5}}
+    <button ng-click="$ctrl.reset()" ng-disabled="$ctrl.counter == 5">reset</button>
+</div>
