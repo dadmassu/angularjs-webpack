@@ -13,6 +13,7 @@ class controller {
             .then((datas) => {
                 this.selamta = datas.data;
                 console.log('inside', this.selamta);
+                console.log('muole');
 
             }, (datas) => {
                 console.log(datas);
